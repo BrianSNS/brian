@@ -216,7 +216,7 @@ html {
     z-index: 5;
 
     /* Aumentei o padding direito para o texto não bater no buraco maior */
-    padding: 40px 220px 40px 50px;
+    padding: 50px 40px 40px 40px;
     text-align: left;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     /* Margem superior para não bater na foto que está acima dele no HTML */
@@ -259,6 +259,7 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    padding: 10px 100px 0px 0px;
 }
 
 .cargo-titulo {
@@ -268,6 +269,7 @@ html {
     margin-bottom: 25px;
     text-transform: uppercase;
     text-align: center;
+    padding: 0px 100px 20px 0px;
 }
 
 .bio-resumo p {
@@ -984,10 +986,31 @@ html {
         align-items: flex-start;
     }
 
-
+f
     /* #region --- CSS SOBRE MOBILE --- */
     .sobre-wrapper { margin-top: 60px; }
     
+    .profile-text h3 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .cargo-titulo {
+        color: #E6C53B; /* Amarelo para destaque, ou use um lilás claro */
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    }
+
     .profile-card {
         /* Remove o efeito de corte no celular */
         -webkit-mask: none;
@@ -1047,6 +1070,8 @@ html {
     .business-card-split {
         flex-direction: column; /* Empilha no celular */
         height: auto;
+        margin-top: 220px;
+        margin-bottom: 40px
     }
     
     .left-side {
@@ -1057,6 +1082,10 @@ html {
     
     .right-side {
         padding: 40px 30px;
+    }
+
+    .icon-box.on-line {
+        margin-left: 20px;
     }
     /* #endregion */
 }
